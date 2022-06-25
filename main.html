@@ -8,6 +8,7 @@
         margin:0;
         background-color:rgb(219, 219, 219);
         font-family: 'Nanum Gothic';
+        color: rgb(44, 44, 44)
     }
     .menu{
         background-color: #272727;
@@ -16,6 +17,7 @@
         color:white;
         padding: 10px;
         padding-left:70px ;
+        margin-bottom:40px;
     }
     .menu_button_index{
       font-weight: bold;
@@ -30,20 +32,43 @@
         padding-left:30px;
         border-right:1px solid white;
     }
+    .page_title{
+        margin-left:40px;
+        margin-right:40px;
+        margin-bottom: 70px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:20px;
+        font-size:35px;
+        border-bottom:1px solid rgb(44,44,44)
+    }
     .content{
-
+        display:grid;
+        grid-template-columns: 300px 1fr;
+        font-size: 20px;
+        margin-bottom: 200px;
+    }
+    .img{
+        margin-left:60px;
+    }
+    .img_text{
+        padding-left:20px;
+        padding-top:10px;
     }
 </style>
 <title> Welcome</title>
     </head>
     <body>
 <div class ="menu">
-    <span class = "menu_button_index">메뉴1</span>
+    <span class = "menu_button_index">Student LEE</span>
     <span class = "menu_button">학력사항</span>
     <span class = "menu_button">경력사항</span>
     <span class = "menu_button">More Infomation</span>
 </div>
-<div class = "content">
+    <div class = "page_title">연락처 및 주소</div>
+<div class="content">
+    <img src="C:\Users\Admin\Desktop\wepProgramming\anony.png" class = "img">
+    <span class = "img_text"><font size="20"><strong>Student LEE</strong></font><br><br>▪ MP : 010 - 0000 - 0000<br><br>▪ E-mail : xxxxx.gmail.com<br><br>▪ Address : XXX, Deoksugung-gil, Jung-gu, Seoul, Republic of Korea</span>
 </div>
 <div id="disqus_thread"></div>
 <script>
