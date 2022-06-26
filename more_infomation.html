@@ -20,22 +20,29 @@
         margin-bottom:40px;
     }
     .menu_button_index{
+      text-decoration: none;
       font-weight: bold;
       padding-right:30px;
       font-size: 30px;
+      color: rgb(255, 255, 255)
       
     }
     .menu_button{
+        text-decoration: none;
         background-image: solid rgb(0,0,0);
         font-size: 20px;
         padding-right:30px;
         padding-left:30px;
-        border-right:1px solid white;
+        border-left:1px solid white;
+        color: rgb(255, 255, 255)
+    }
+    .menu_button:hover{
+        color:gray;
     }
     .page_title{
         margin-left:40px;
         margin-right:40px;
-        margin-bottom: 70px;
+        margin-bottom: 40px;
         padding-left:20px;
         padding-right:20px;
         padding-bottom:20px;
@@ -44,32 +51,61 @@
     }
     .content{
         display:grid;
-        grid-template-columns: 300px 1fr;
-        font-size: 20px;
-        margin-bottom: 200px;
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+        font-size: 20px;      
+        height: 300px;
     }
     .img{
         margin-left:60px;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
     }
     .img_text{
         padding-left:20px;
-        padding-top:10px;
+        padding-top:20px;
+        margin-right:60px;
+        height : 75px;
+        text-decoration: none;
+        color: rgb(0, 0, 0)
+
+    }
+    .img_text:hover{
+        color:gray;
+    }
+    .youtube_message{
+        font-weight:bold;
+        padding-left:60px;
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .youtube{
+        padding-left:60px;
+        margin-bottom : 300px;
+    }
+    .copyright{
+        margin-left:30px;
+        font-size:15px;
     }
 </style>
 <title> Welcome</title>
     </head>
     <body>
 <div class ="menu">
-    <span class = "menu_button_index">Student LEE</span>
-    <span class = "menu_button">학력사항</span>
-    <span class = "menu_button">경력사항</span>
-    <span class = "menu_button">More Infomation</span>
+    <a href = "index.html" class = "menu_button_index">Student LEE</a>
+    <a href="education.html" class = "menu_button">학력 사항 및 자격증</a>
+    <a href="career.html"class = "menu_button">경력사항</a>
+    <a href="more_infomation.html"class = "menu_button"><u>More Infomation</u></a>
 </div>
-    <div class = "page_title">연락처 및 주소</div>
+    <div class = "page_title">More Infomation</div>
 <div class="content">
-    <img src="https://mvp.microsoft.com/ko-kr/PublicProfile/Photo/5003055" class = "img">
-    <span class = "img_text"><font size="20"><strong>Student LEE</strong></font><br><br>▪ MP : 010 - 0000 - 0000<br><br>▪ E-mail : xxxxx.gmail.com<br><br>▪ Address : XXX, Deoksugung-gil, Jung-gu, Seoul, Republic of Korea</span>
+    <img src="youtube.png" class = "img">
+    <a href ="https://www.youtube.com/" class = "img_text">Student LEE's<br><font size="6"><strong>Youtube Page</strong></font><br></a>
+    <img src="github.png" class = "img">
+    <a href ="https://github.com/Muubv/wepProgramming" class = "img_text">Student LEE's<br><font size="6"><strong>Github Page</strong></font><br></a>
 </div>
+<div class = "youtube_message">This web page was created by referring to...</div>
+<iframe class = "youtube" width="560" height="315" src="https://www.youtube.com/embed/1ttLx9MbrCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <div id="disqus_thread"></div>
 <script>
     /**
@@ -102,5 +138,6 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+    <span class="copyright">Copyright 2022. Student LEE All rights reserved. </span>
     </body>
 </html>
